@@ -1,0 +1,8 @@
+1.preprocess.py
+主要实现的是preprocess(img_path)功能，用于对车牌图片进行车牌矫正和字符分割，并将车牌矫正和字符分割的结果返回
+2.get_preprocess_data.py
+由于preprocess的时间复杂度有点高，所以将这一步进行预处理，得到每一张图片的车牌矫正和字符分割信息并保存到preprocess_data文件当中
+3.train_simple_net.py
+在预处理后的基础上训练分割好的字符
+4.customize_service.py和config.json
+部署所需文件
